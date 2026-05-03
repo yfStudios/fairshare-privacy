@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FairShare — Delete your account</title>
+<style>
+  body {
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: 0 1rem 4rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.55;
+  }
+  h1 { font-size: 1.75rem; margin-top: 0; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  ol, ul { padding-left: 1.4rem; }
+  li { margin-bottom: 0.4rem; }
+  code { background: #f3f3f3; padding: 0.1rem 0.35rem; border-radius: 3px; font-size: 0.95em; }
+  a { color: #2c5e3f; }
+  .meta { color: #666; font-size: 0.9rem; }
+  .note {
+    background: #f7f6ef;
+    border-left: 4px solid #b8a370;
+    padding: 0.75rem 1rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Delete your FairShare account</h1>
+<p class="meta">App: <strong>FairShare</strong> · Developer: <strong>yfStudios</strong> · Last updated: 2026-05-03</p>
+
+<p>
+  This page explains how to request deletion of your FairShare account and the data linked to it.
+  You can do this from inside the app at any time, or by emailing us if you can't access the app.
+</p>
+
+<h2>Delete your account from inside the app</h2>
+<ol>
+  <li>Open the <strong>FairShare</strong> app and sign in.</li>
+  <li>Tap the <strong>More</strong> tab in the bottom navigation.</li>
+  <li>Tap <strong>Account</strong>, then <strong>Delete my account</strong>.</li>
+  <li>Read the on-screen confirmation, then type <code>DELETE</code> to confirm.</li>
+  <li>Tap <strong>Delete my account</strong>. The deletion runs immediately.</li>
+</ol>
+
+<h2>If you can't access the app</h2>
+<p>
+  Email <a href="mailto:fairshare.hq+support@gmail.com">fairshare.hq+support@gmail.com</a> from the email address you used to sign up.
+  Include the subject line <strong>"Delete my FairShare account"</strong>. We will manually delete your account within 30 days of receiving your request.
+</p>
+
+<h2>What gets deleted</h2>
+<ul>
+  <li>Your user profile (display name, email).</li>
+  <li>Your authentication account (Firebase Auth) and all active session tokens.</li>
+  <li>If you are the <strong>only member of a household</strong>: every record in that household — expenses, transfers, contribution plans, budgets, categories, savings pots, and the household record itself. This is a permanent hard delete.</li>
+</ul>
+
+<h2>What is kept (and why)</h2>
+<ul>
+  <li>
+    <strong>Tombstoned membership in shared households.</strong>
+    If you share a household with other members, your identity link (name + email) is removed,
+    but your past financial activity inside that household (the expenses you logged, contributions you made,
+    transfers you recorded) is retained so that the remaining members keep an accurate financial history.
+    The tombstone shows as <em>"Former member"</em> with no personally identifiable information.
+  </li>
+  <li>
+    <strong>Anonymized server logs</strong> required for security and abuse prevention (App Check attestation
+    failures, rate-limit hits). These contain no personal data and are retained per Firebase defaults.
+  </li>
+</ul>
+
+<div class="note">
+  <strong>Note for shared households.</strong>
+  If you want every trace of your financial activity removed from a shared household — not just your identity
+  — you must first <strong>leave the household</strong> (which keeps shared history intact) or ask the
+  other members to delete the household entirely. Email us if you need help arranging this.
+</div>
+
+<h2>Retention period</h2>
+<p>
+  In-app deletion runs immediately. Email-requested deletion is completed within
+  <strong>30 days</strong> of the email arriving. Tombstoned records (see above) are retained for as long
+  as the shared household exists, with no personal identifiers attached.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Questions: <a href="mailto:fairshare.hq+support@gmail.com">fairshare.hq+support@gmail.com</a><br>
+  Privacy policy: <a href="https://yfstudios.github.io/fairshare-privacy/">https://yfstudios.github.io/fairshare-privacy/</a><br>
+  Terms of Use: <a href="https://yfstudios.github.io/fairshare-privacy/terms/">https://yfstudios.github.io/fairshare-privacy/terms/</a>
+</p>
+
+</body>
+</html>
